@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Taplink</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+       background: linear-gradient(270deg, #000000, #800000, #000000);
+       background-size: 400% 400%;
+       animation: bgMove 10s ease infinite;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+}
+     @keyframes bgMove {
+     0% { background-position: 0% }
+     50% { background-position: 100% }
+     100% { background-position: 0% }
+    }
+
+    .container {
+      animation: fadeIn 1s ease;
+      text-align: center;
+      max-width: 800px;
+      width: 100%;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+    }
+
+ .avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: 0.3s;
+}
+
+.avatar:hover {
+  transform: scale(1.3);
+}
+    }
+
+    h1 {
+      margin: 10px 0;
+    }
+
+    p {
+      color: #ccc;
+      margin-bottom: 20px;
+    }
+
+    .link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  width: 100%;
+max-width: 1000px;
+  margin: 12px 0;        
+  box-sizing: border-box;
+
+  padding: 22px;
+  font-size: 18px;
+
+  border-radius: 14px;
+  font-weight: bold;
+  transition: 0.3s;
+    }
+.instagram {
+  background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf);
+  color: white;
+}
+
+.tiktok {
+  background: linear-gradient(
+    45deg,
+    #000000 30%,
+    #25F4EE 60%,
+    #FE2C55 100%
+  );
+  color: white;
+}
+.youtube {
+  background: linear-gradient(45deg, #ff0000, #ff4d4d, #cc0000);
+  color: white;
+}
+
+.telegram {
+  background: linear-gradient(45deg, #229ED9, #5abcf0);
+  color: white;
+}
+.link:hover {
+ transform: scale(1.05);          /* лёгкое увеличение */
+  filter: brightness(1.15);        /* ярче */
+  box-shadow: 0 8px 25px rgba(0,0,0,0.4); /* тень */
+}
+@media (max-width: 500px) {
+.container {
+    align-items: center;
+  }
+  .link {
+    max-width: 300px;
+    padding: 16px;   
+    font-size: 16px; 
+    margin-left: auto;
+    margin-right: auto;
+  </style>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<body>
+
+  <div class="container">
+    <img src="https://ia600107.us.archive.org/19/items/685984460-18106675645736117-4690699330960632906-n/685984460_18106675645736117_4690699330960632906_n.jpg" class="avatar">
+    
+    <h1>Hitame</h1>
+  
+
+<a href="https://www.instagram.com/hitame1m/" class="link instagram">
+  <i class="fab fa-instagram"></i> Instagram
+</a>
+
+<a href="https://www.tiktok.com/@hitame0" class="link tiktok">
+  <i class="fab fa-tiktok"></i> TikTok
+</a>
+
+<a href="https://www.youtube.com/@hitame1p" class="link youtube">
+  <i class="fab fa-youtube"></i> YouTube
+</a>
+
+<a href="https://t.me/h1tame" class="link telegram">
+  <i class="fab fa-telegram"></i> Telegram
+</a>
+  </div>
+
+</body>
+</html>
